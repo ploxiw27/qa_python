@@ -80,3 +80,11 @@ class TestBooksCollector:
         collector = BooksCollector()
         collector.add_new_book('Приключение Буратино')
         assert collector.get_books_genre() == {'Приключение Буратино': ''}
+
+    def test_get_list_of_favorites_books(self):
+        collector = BooksCollector()
+        collector.add_new_book('Приключение Буратино')
+        collector.add_new_book('Roar')
+        collector.add_book_in_favorites('Приключение Буратино')
+        collector.add_book_in_favorites('Roar')
+        assert collector.get_list_of_favorites_books() == ['Приключение Буратино', 'Roar']

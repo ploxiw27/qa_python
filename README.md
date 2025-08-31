@@ -9,3 +9,4 @@ test_get_books_for_children - Проверка возврата книг без 
 test_add_book_in_favorites - Проверка добавления книги в список избранного
 test_delete_book_from_favorites - Проверка удаление добавленой книги из избранного списка
 test_get_books_genre - Проверка на получения текущего словаря
+test_get_list_of_favorites_books - Проверка на получения списка избранных книг
